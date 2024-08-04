@@ -19,7 +19,6 @@ nav {
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .logo {
   display: inline-block;
   font-size: 24px;
@@ -399,17 +398,7 @@ img {
   height: auto;
 }
 
-.container {
-  display: grid;
-  place-items: center;
-  margin-inline: 1.5rem;
-  padding-block: 5rem;
-}
 
-.card__container {
-  display: grid;
-  row-gap: 3.5rem;
-}
 
 .card__article {
   position: relative;
