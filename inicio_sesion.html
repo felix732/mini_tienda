@@ -20,16 +20,17 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    overflow: hidden;
 }
 nav {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
   
   .logo {
     display: inline-block;
@@ -41,33 +42,34 @@ nav {
   }
   
   .links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .link {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #6a0dad;
-    background: linear-gradient(to right, #000000, #6a0dad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease;
-  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #6a0dad;
+  background: linear-gradient(to right, #c21212, #0d18ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
   
   .link:hover {
     transform: scale(1.1);
   }
 
 .login-container {
-    height: 80%;
+    height: 70%;
     width: 60em;
     margin: 6em auto;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    transform: translate(0, -15%);
+    transform: translate(0, -8%);
     overflow: hidden;
 }
 
@@ -181,7 +183,12 @@ nav {
     font-weight: 600;
     cursor: pointer;
 }
-
+.logo img {
+      width: 150px;
+      height: 55px;
+      display: block;
+      margin: 0 auto;
+    }
 @media screen and (max-width: 1000px) {
     .login-container {
         width: 70%;
@@ -205,14 +212,9 @@ nav {
 
 @media screen and (max-width: 500px) {
     .login-container {
-        height: 90%;
+        height: 80%;
     }
 
-    .social-login {
-        flex-direction: column;
-        align-items: center;
-        height: 30%;
-    }
 
     .login-info-container > p {
         margin: 0;
@@ -223,7 +225,9 @@ nav {
 </head>
 <body>
     <nav>
-        <div class="logo">Barberia y Peluqueria Willi</div>
+        <div class="logo">
+            <img src="img/logo_1.png" alt="logo">
+        </div>
         <div class="links">
           <a href="./index.html" class="link">Inicio</a>
         </div>
@@ -235,8 +239,8 @@ nav {
             <div class="social-login">
             </div>
             <form class="inputs-container">
-                <input class="input" type="text" placeholder="Correo">
-                <input class="input" type="password" placeholder="Clave">
+                <input class="input" type="text" name="usuario" placeholder="Usuario">
+                <input class="input" type="password" name="clave" placeholder="Clave">
                 <button class="btn">Iniciar Sesión</button>
             </form>
           </div>
