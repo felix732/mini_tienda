@@ -443,11 +443,11 @@ img {
 }
 
 .card__button {
-  background-color: green;
   text-decoration: none;
   font-size: var(--small-font-size);
   font-weight: 600;
   color: var(--first-color);
+  margin-right: 25px;
 }
 
 .card__button:hover {
