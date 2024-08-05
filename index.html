@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Uva Company</title>
   <link rel="stylesheet" href="style.css">
-  <style>
+   <style>
     .descripcion_p {
       position: relative;
       padding: 20px;
@@ -38,7 +38,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 1; /* Asegura que la imagen esté detrás del contenido */
+      z-index: 1;
     }
   </style>
 </head>
@@ -46,9 +46,9 @@
 
 <!--NAV-->
 <nav>
-   <div class="logo">Uva Company</div>
+   <div class="logo">BARBERIA Y PELUQUERIA WILLI</div>
    <div class="links">
-     <a href="./registro.html" class="link">Registrarse</a>
+    
      <a href="./inicio_sesion.html" class="link">Inicio Sesión</a>
    </div>
    <div class="menu-icon">
@@ -57,7 +57,6 @@
    </div>
  </nav>
  <div class="mobile-menu">
-     <a href="./registro.html" class="link">Registrarse</a>
      <a href="./inicio_sesion.html" class="link">Inicio Sesión</a>
  </div>
 <!--FIN NAV-->
@@ -110,7 +109,8 @@
     <a href="#" class="opcion" data-category=""><i class='bx bxl-facebook'></i></a>
   </div>
 </div>
-<div class="descripcion_p">
+<!--DESCRIPCION CORTA-->
+  <div class="descripcion_p">
   <p>
     Bienvenido a Barbería y Peluquería Willi, el lugar perfecto para todas tus necesidades de belleza y estilo en un ambiente cálido y acogedor. <br>
     Nuestra barbería ofrece servicios profesionales y de calidad para caballeros, que van desde cortes de pelo y afeitado de barba, hasta tratamientos faciales y cuidado del cabello.
@@ -239,13 +239,14 @@
        <div class="modal-body">
          Si eres usuario de computadora puedes ver el número de teléfono y escribirlo desde dispositivo móvil con WhatsApp instalado. <br><br>
          <div class="copy-container">
-           <input type="text" readonly class="WhatsApp" value="0412xxxxxxx">
+           <input type="text" readonly class="WhatsApp" value="04169055705">
            <i class='bx bxs-copy copy-icon' onclick="copyToClipboard()"></i>
          </div>
          <br><br>
-         <p>Si eres usuario móvil, puedes presionar el botón para que te lleve al chat directo.</p>
-         <a href="#" class="btn-comprar">COMPRAR<i class='bx bxs-chat'></i></a><br>
-         <span>!Si tienes el WhatsApp Web en tu computadora tambien funciona esta opcion.</span>
+         <p>Presionar el botón para ir al chat.</p>
+         <center>
+           <a href="#" class="btn-comprar">COMPRAR<i class='bx bxs-chat'></i></a><br>
+         </center>
        </div>
        <div class="modal-footer">
          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
