@@ -27,7 +27,11 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.descripcion_p{
+  margin: 25px;
+  width: 100px;
+  height: 100px;
+}
 .links {
   display: flex;
   justify-content: flex-end;
