@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-08-2024 a las 03:01:20
+-- Tiempo de generación: 07-08-2024 a las 18:28:09
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -42,6 +42,30 @@ CREATE TABLE `inicio_sesion` (
 INSERT INTO `inicio_sesion` (`id`, `usuario`, `clave`) VALUES
 (1, 'admin', 'admin');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `redes_sociales`
+--
+
+CREATE TABLE `redes_sociales` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(100) DEFAULT NULL,
+  `link` varchar(500) DEFAULT NULL,
+  `mas_acciones` int(100) DEFAULT NULL,
+  `telefono` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `redes_sociales`
+--
+
+INSERT INTO `redes_sociales` (`id`, `nombre`, `link`, `mas_acciones`, `telefono`) VALUES
+(1, 'Facebook', 'https://facebook.com', NULL, NULL),
+(2, 'Instagram', 'https://instagram.com', NULL, NULL),
+(3, 'WhatsApp', 'https://whatsapp.com', NULL, '04169055705'),
+(4, 'TikTok', 'https://tiktok.com', NULL, NULL);
+
 --
 -- Índices para tablas volcadas
 --
@@ -50,6 +74,12 @@ INSERT INTO `inicio_sesion` (`id`, `usuario`, `clave`) VALUES
 -- Indices de la tabla `inicio_sesion`
 --
 ALTER TABLE `inicio_sesion`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `redes_sociales`
+--
+ALTER TABLE `redes_sociales`
   ADD PRIMARY KEY (`id`);
 COMMIT;
 
