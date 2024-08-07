@@ -27,9 +27,9 @@ if (!empty($_POST["usuario"]) && !empty($_POST["clave"])) {
         $_SESSION["id"] = $fila['id'];
         $_SESSION["usuario"] = $fila['usuario'];
 
-        switch ($fila['id_rol']) {
+        switch ($fila['id']) {
             case 1:
-                header("Location: ./index.html");
+                header("Location: ./administrador/admin.html");
                 exit();
             case 2:
                 header("Location: ./vista_facilitador/a01_vista_faci.php");

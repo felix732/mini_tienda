@@ -1,0 +1,269 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    width: 100px;
+    height: auto;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #6a0dad;
+    background: linear-gradient(to right, #c21212, #0d18ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.link:hover {
+    transform: scale(1.1);
+}
+.leaderboard {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.leaderboard-header {
+    background-color: #ffe680;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #f0f0f0;
+}
+.add-button {
+    background-color: #ffe680;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.add-button i {
+    margin-right: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+.highlight {
+    background-color: #ffe680;
+    font-weight: bold;
+}
+.actions {
+    text-align: center;
+}
+.actions i {
+    cursor: pointer;
+    margin: 0 5px;
+    color: #555;
+}
+.actions i:hover {
+    color: #000;
+}
+.card-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.mobile-menu {
+    display: none;
+}
+.menu-icon .bx-x {
+    display: none;
+  }
+  .menu-icon.show .bx-menu {
+    display: none;
+  }
+  .menu-icon.show .bx-x {
+    display: block;
+  }
+  
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-menu .link {
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 40000px) {
+  
+    .links {
+        display: block;
+      }
+    
+      .links {
+        display: block;
+      }
+      .menu-icon {
+        display: none;
+      }
+    
+      .mobile-menu {
+        display: none;
+      }
+    }
+  @media screen and (max-width: 1000px) {
+    
+  .links {
+      display: block;
+    }
+  
+    .links {
+      display: block;
+    }
+    .menu-icon {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .card__data {
+      width: 250px;
+      padding: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card__container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 1120px) {
+    .container {
+      height: 100vh;
+    }
+  
+    .card__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .card__img {
+      width: 348px;
+    }
+  
+    .card__data {
+      width: 316px;
+      padding-inline: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container-carousel {
+      width: 100%;
+      transform: translate(0, 10%);
+      border-radius: 0%;
+    }
+    .slider-section img{
+      border-radius: 0%;
+    }
+    .swiper {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+  
+    .menu-icon {
+        font-size: 30px;
+      display: block;
+    }
+    .links {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      transform: translate(60%, 10%);
+      border-radius: 3%;
+      width: 60%;
+      background-color: #676767;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+  
+    .mobile-menu.show {
+      display: flex;
+    }
+  
+    
+  
+  }
+  @media screen and (max-width: 600px) {
+    .links {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+  
+    .mobile-menu.show {
+      display: flex;
+    }
+  }
