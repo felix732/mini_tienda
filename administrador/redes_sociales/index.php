@@ -152,6 +152,7 @@
         </div>
         <div class="links">
             <a href="../index.php" class="link">Atras</a>
+            <a href="../admin.html" class="link">Atras</a>
             <a href="./inicio_sesion.php" class="link">Cerrar Sesión</a>
         </div>
         <div class="menu-icon">
@@ -161,6 +162,7 @@
     </nav>
     <div class="mobile-menu">
         <a href="../index.php" class="link">Atras</a>
+        <a href="../admin.html" class="link">Atras</a>
         <a href="./inicio_sesion.php" class="link">Cerrar Sesión</a>
     </div>
     

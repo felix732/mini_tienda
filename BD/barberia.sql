@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
+<<<<<<< HEAD
 -- Tiempo de generación: 12-08-2024 a las 06:33:34
+=======
+-- Tiempo de generación: 07-08-2024 a las 18:28:09
+>>>>>>> 6d33993d934292d9a037eaa255e8c86ba038422a
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -72,6 +76,7 @@ INSERT INTO `inicio_sesion` (`id`, `usuario`, `clave`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Estructura de tabla para la tabla `productos`
 --
 
@@ -104,6 +109,8 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `bolivares`, `
 -- --------------------------------------------------------
 
 --
+=======
+>>>>>>> 6d33993d934292d9a037eaa255e8c86ba038422a
 -- Estructura de tabla para la tabla `redes_sociales`
 --
 
@@ -120,10 +127,17 @@ CREATE TABLE `redes_sociales` (
 --
 
 INSERT INTO `redes_sociales` (`id`, `nombre`, `link`, `mas_acciones`, `telefono`) VALUES
+<<<<<<< HEAD
 (1, 'Facebook', 'https://facebook.com', NULL, ''),
 (2, 'Instagram', 'https://instagram.com', NULL, NULL),
 (3, 'WhatsApp', 'https://wa.me/5804169055709999', NULL, '04169055705'),
 (4, 'TikTok', 'https://tiktok.com', NULL, '');
+=======
+(1, 'Facebook', 'https://facebook.com', NULL, NULL),
+(2, 'Instagram', 'https://instagram.com', NULL, NULL),
+(3, 'WhatsApp', 'https://whatsapp.com', NULL, '04169055705'),
+(4, 'TikTok', 'https://tiktok.com', NULL, NULL);
+>>>>>>> 6d33993d934292d9a037eaa255e8c86ba038422a
 
 --
 -- Índices para tablas volcadas
@@ -142,16 +156,20 @@ ALTER TABLE `inicio_sesion`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`);
 
 --
+=======
+>>>>>>> 6d33993d934292d9a037eaa255e8c86ba038422a
 -- Indices de la tabla `redes_sociales`
 --
 ALTER TABLE `redes_sociales`
   ADD PRIMARY KEY (`id`);
+<<<<<<< HEAD
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -168,6 +186,8 @@ ALTER TABLE `carrusel`
 --
 ALTER TABLE `productos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+=======
+>>>>>>> 6d33993d934292d9a037eaa255e8c86ba038422a
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
