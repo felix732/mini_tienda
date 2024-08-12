@@ -29,13 +29,7 @@ if (!empty($_POST["usuario"]) && !empty($_POST["clave"])) {
 
         switch ($fila['id']) {
             case 1:
-                header("Location: ./administrador/admin.html");
-                exit();
-            case 2:
-                header("Location: ./vista_facilitador/a01_vista_faci.php");
-                exit();
-            case 3:
-                header("Location: a01_vista.php");
+                header("Location: ./administrador/index.php");
                 exit();
             default:
                 // Manejar otros roles si es necesario

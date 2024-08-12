@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>ADMIN - Redes Sociales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../img_admin/logo_1.png" alt="logo">
+        </div>
+        <div class="links">
+            <a href="../admin.html" class="link">Atras</a>
+            <a href="./inicio_sesion.php" class="link">Cerrar Sesión</a>
+        </div>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times" style="display:none;"></i>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="../admin.html" class="link">Atras</a>
+        <a href="./inicio_sesion.php" class="link">Cerrar Sesión</a>
+    </div>
+    
+    <div class="leaderboard">
+        <div class="leaderboard-header">
+            CONFIGURACIÓN DE REDES SOCIALES
+        </div>
+        <div class="add-button">
+            <i class="fas fa-plus"></i> Agregar Red Social
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Icono</th>
+                    <th>Link</th>
+                    <th>Número de Teléfono</th>
+                    <th class="actions">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Facebook</td>
+                    <td><i class="fab fa-facebook" style="color:#3b5998;"></i></td>
+                    <td><a href="https://facebook.com" target="_blank">https://facebook.com</a></td>
+                    <td>N/A</td>
+                    <td class="actions">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td><i class="fab fa-instagram" style="color:#E1306C;"></i></td>
+                    <td><a href="https://instagram.com" target="_blank">https://instagram.com</a></td>
+                    <td>N/A</td>
+                    <td class="actions">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>WhatsApp</td>
+                    <td><i class="fab fa-whatsapp" style="color:#25D366;"></i></td>
+                    <td><a href="https://whatsapp.com" target="_blank">https://whatsapp.com</a></td>
+                    <td>+123456789</td>
+                    <td class="actions">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TikTok</td>
+                    <td><i class="fab fa-tiktok" style="color:#000000;"></i></td>
+                    <td><a href="https://tiktok.com" target="_blank">https://tiktok.com</a></td>
+                    <td>N/A</td>
+                    <td class="actions">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon .fa-bars');
+        const closeIcon = document.querySelector('.menu-icon .fa-times');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuIcon.addEventListener('click', () => {
+            mobileMenu.style.display = 'flex';
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', () => {
+            mobileMenu.style.display = 'none';
+            menuIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
