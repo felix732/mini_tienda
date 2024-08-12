@@ -230,7 +230,7 @@
             <img src="img/logo_1.png" alt="logo">
         </div>
         <div class="links">
-          <a href="./index.html" class="link">Inicio</a>
+          <a href="./index.php" class="link">Inicio</a>
         </div>
     </nav>
 
